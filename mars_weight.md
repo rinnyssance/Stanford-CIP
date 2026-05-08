@@ -1,4 +1,4 @@
-````markdown
+
 # Project Notes — Planetary Weight Calculator
 
 ## Section
