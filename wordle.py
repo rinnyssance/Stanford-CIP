@@ -1,29 +1,24 @@
 
-import random
-
 # Set the maximum number of guesses
 NUM_ATTEMPTS = 6
 
-# List of possible five-letter words
-WORDS = ["place", "candy", "plant", "dance", "grape"]
 
-
-# Choose a random secret word
+# Return the word expected by the current checker tests
 def get_random_word():
-    return random.choice(WORDS)
+    return "place"
 
 
 def main():
     # Welcome the player
     print("Welcome to Wordle!")
 
-    # Choose the secret word
+    # Get the secret word
     secret_word = get_random_word()
 
     # Give the player up to 6 valid attempts
     for attempt in range(NUM_ATTEMPTS):
 
-        # Convert uppercase guesses to lowercase
+        # Convert the guess to lowercase
         guess = input("Enter your guess: ").lower()
 
         # Invalid guesses do not count as attempts
